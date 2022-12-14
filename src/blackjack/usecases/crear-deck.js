@@ -11,7 +11,7 @@ import _ from 'underscore';
 // 
 export const crearDeck = ( tiposDeCarta , tiposEspeciales ) => {
 
-    f( !tiposDeCarta || tiposDeCarta.length === 0 ) 
+    if( !tiposDeCarta || tiposDeCarta.length === 0 ) 
         throw new Error('tiposDeCarta es obligatorio como un arreglo de string');
 
     if( !tiposEspeciales || tiposEspeciales.length === 0 ) 
